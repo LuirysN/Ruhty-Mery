@@ -1,0 +1,308 @@
+/* Estilos gerais */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #E2DFD0;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 2px;
+}
+
+h3 {
+    color: #FF0000;
+    font-size: 30px;
+    margin: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+h3:hover{
+    color: #F6F5F2;
+}
+.sobre_mim {
+    text-align: left;
+    margin: 0 20px;
+}
+
+footer{
+text-align: center;
+font-size: 16px;
+}
+
+.dev{
+  text-decoration: underline;
+  color: white;
+}
+
+.dev:hover{
+  color: red;
+}
+
+/* Container principal */
+.bio {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Logo */
+#logo {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #d6c296;
+  border-radius: 50%;
+  margin: 1px auto;
+  transition: transform 0.7s ease;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+    border: 2px solid #E4003A;
+}
+
+/* Containers de conteúdo */
+.container {
+  background-color: #1e1e1e;
+  margin: 1px auto;
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 15px;
+  max-width: 800px;
+    
+}
+
+.trigger {
+  margin: 1px;
+  color: #F6F5F2;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.trigger:hover{
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Containers de vídeo e foto */
+.video_container, .foto_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video_item, .foto_item {
+    margin: 10px;
+    text-align: center;
+}
+
+.video_item video, .foto_item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 300px;
+    border-radius: 10px;
+    
+}
+
+.copy{
+    margin-top: 60px;
+}
+
+ul{
+    text-align: left;
+}
+
+.cotacao_whatsapp{
+  text-decoration: none;
+  color: white;
+}
+
+/*ICONES DE CONTATO*/
+.card {
+    display: flex;
+    height: 50px;
+    width: 200px;
+    position: absolute;
+    right: 10px;
+    margin-top: 0px;
+  }
+  
+  .card svg {
+    position: absolute;
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  .card .social-link1,.card .social-link2,.card .social-link3,.card .social-link4 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+  }
+  
+  .card svg {
+    transform: scale(1);
+  }
+  
+  .card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link2:hover {
+    background-color: #00ccff;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link3:hover {
+    background-color: #5865f2;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  .card .social-link4:hover {
+    background-color: #12a50b;
+    animation: bounce_613 0.4s linear;
+  }
+  
+  @keyframes bounce_613 {
+    40% {
+      transform: scale(1.4);
+    }
+  
+    60% {
+      transform: scale(0.8);
+    }
+  
+    80% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+/* Botao Instagram na aba Trabalhos*/ 
+button {
+  position: relative;
+  width: 130px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  border: 1px #FFB700 solid;
+  overflow: hidden;
+}
+
+.text1 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 22%;
+}
+
+.text2 {
+  position: absolute;
+  top: 25%;
+  left: -50px;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s;
+}
+
+.icon::before {
+  position: absolute;
+  left: -100px;
+  top: 0;
+  z-index: -1;
+  content: '';
+  width: 130px;
+  height: 33px;
+  border-radius: 30px;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  ;
+}
+
+button:hover .icon {
+  transform: translateX(96px);
+  transition: transform 0.5s;
+}
+
+button:hover .text2 {
+  transform: translateX(100px);
+  transition: transform 0.6s;
+}
+
+button:active {
+  transform: scale(1.03);
+}
+
+/* BOTAO COTAÇÃO NA ABA COTAÇÃO*/ 
+.solicitar_cotacao {
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.solicitar_cotacao span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #212121;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+.solicitar_cotacao span:hover {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.solicitar_cotacao span:not(hover) {
+  transition: all 1s;
+}
