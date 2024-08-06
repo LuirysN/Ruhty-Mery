@@ -9,14 +9,14 @@ body {
 
 h1 {
     color: #E2DFD0;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Courier New', Courier, monospace;
     margin: 2px;
 }
 
 h3 {
     color: #FF0000;
-    font-size: 30px;
+    font-size: 25px;
     margin: 10px;
     font-style: italic;
     text-decoration: underline;
@@ -52,8 +52,8 @@ font-size: 16px;
 
 /* Logo */
 #logo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border: 2px solid #d6c296;
   border-radius: 50%;
   margin: 1px auto;
